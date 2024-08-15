@@ -1,0 +1,33 @@
+<!-- views/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+    <main>
+        <h2>Tasks</h2>
+        <ul>
+            <!-- Replace the placeholder with actual task items in a real application -->
+            <li><strong>Sample Task 1</strong> - Description of sample task 1 (Pending)</li>
+            <li><strong>Sample Task 2</strong> - Description of sample task 2 (Completed)</li>
+            <!-- More tasks would go here -->
+        </ul>
+
+        <h3>Add a New Task</h3>
+        <form action="/add" method="POST">
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" required>
+            <label for="description">Description:</label>
+            <textarea name="description" id="description"></textarea>
+            <button type="submit">Add Task</button>
+        </form>
+    </main>
+</body>
+</html>
